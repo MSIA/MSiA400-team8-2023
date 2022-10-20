@@ -24,7 +24,7 @@ Updates:
 - Generate two business areas/questions to investigate (will decide on one final idea)
 - First, what kind of products need more discounts than others to be sold? What kind of products can be sold with little amount of discounts?
 -> Could regress discount amount onto features (will think of as many features that can effect this)
--> Problem/concern: some transaction have OrgPrice = $0 (we could remove them -> [some hint from TA would be nice :)])
+-> Problem/concern: 1,425,811 transactions from 120 millions transactions have OrgPrice = $0 (we could remove them -> [some hint from TA would be nice :)])
 - Second, What products can be combined together to create "bulk sale" with some discount (compare to summing all products' prices)?
 -> ML ideas: clustering analysis or doing association rule on transaction table -> see which products get bought together. 
 -> Problem/concern: hard to quantify the result (ROI) -> we could split transaction table into train and test by a point in time.
