@@ -34,3 +34,28 @@ Next steps:
 - EDA mainly transaction table
 - try to clean and upload SKU table
 - adapt business/ML problem from TA's comments
+
+### Oct 28th
+Updates:
+- Populated SKU table 
+- Successfully connect pgAdmin to jupyter notebook
+- Perform EDA on transaction tables (mainly) and other table (not yet on skutable)
+- EDA -> this week focus on discount price business problem (SQL-based EDA)
+- Transaction table
+  - 120M records
+  - 52.6% of transactions have discount -> 2004 48% (46M), 2005 55% (74.6M)
+  - 300k rows are problematic (original price lower than amount paid) -> will be removed
+  - joining with strinfo
+  - 29 states -> discount proportion ranging from 41% to 60% (IA and IL are the top two while AR is at the bottom) -> state might not be the primary feature (could be helpful in tree for interaction term) -> the actual discount avg ranges from 48.6% to 57% 
+  - 327 zip code, discount proportion ranging from 35% to 88% (disregard zip with 100% and 1 transaction) -> could be a good feature -> the actual discount avg ranges from 34% to 69%
+  - Most of the columns in transaction tables are categorical variables, so doing correlation plots is not super meaningful.
+- SKST table
+  - Conducted EDA on skst table (found out missing values, obtained first and second moments for each variable, drawing distribution graphs for numeric features and correlation visualizations)
+  
+Next Steps:
+- Perform EDA for SKU table (also joining it with transaction table)
+- Perform additional EDA on transaction table in a probabilistic approach (pandas-based -> histogram and join correlation plot with other tables)
+- Perform EDA for the second business question (in case the first business question doesn't work out)
+  
+  
+ 
