@@ -74,6 +74,7 @@ Others
   - There were 11629 stores had total orgprice of 0 (out of 714499 stores)
   - over 92.5% of the transaction had R type and 7.5 % had P type
   - majority of the store does not have city/state info. For transaction made, 120914216 transactions don’t have location info. Beyond that, Missoula, MT, Toledo, OH, and Little Rock, AR are the top three city where transactions happened
+  - Of all stores, there are 5029 stores where the average cost for that store is larger than the average retail price; there are 703 stores where the average cost for that store is equal to the average retail price; the remaining are those who are making positive profit.
   
 Next Steps:
   - Feature Engineering
