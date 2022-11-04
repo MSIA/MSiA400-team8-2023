@@ -63,15 +63,18 @@ SKU
   - 1.556m rows for sku table (after excluded 9k problematic rows)
   - ~70k distinct colors
   - ~2.6k distinct brand
+  
 Brand with transaction
   - Max average discount at $555 (right skewed)
   - log transformed -> range from -2 to 2.74
   - proportion of discount transaction ranges from 0 to 100 (some brand appears on transaction table only a few times -> might need to determine some cutoff, such as 10 transaction, to determine that some brand have small transactions and create another feature indicating low-transaction brands)
+  
 Others
   - cost in sksinfo ranges from 0 to 2700, retail ranges from 0 to 6017
   - There were 11629 stores had total orgprice of 0 (out of 714499 stores)
   - over 92.5% of the transaction had R type and 7.5 % had P type
   - majority of the store does not have city/state info. For transaction made, 120914216 transactions don’t have location info. Beyond that, Missoula, MT, Toledo, OH, and Little Rock, AR are the top three city where transactions happened
+  
 Next Steps:
   - Feature Engineering
   - Try Regression models: Ridge/Lasso regresison or Random Forest
