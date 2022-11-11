@@ -75,9 +75,22 @@ Others
   - over 92.5% of the transaction had R type and 7.5 % had P type
   - majority of the store does not have city/state info. For transaction made, 120914216 transactions don’t have location info. Beyond that, Missoula, MT, Toledo, OH, and Little Rock, AR are the top three city where transactions happened
   - Of all stores, there are 5029 stores where the average cost for that store is larger than the average retail price; there are 703 stores where the average cost for that store is equal to the average retail price; the remaining are those who are making positive profit.
-  
+
+### Nov 11th
 Next Steps:
   - Feature Engineering
   - Try Regression models: Ridge/Lasso regresison or Random Forest
+  
+Updates:
+  - Perform feature engineering
+  - features: states (dummy), zip code (~327 dummies in the entire data), brand (~2000 dummies), store (dummies), time (dummy month -> expecting Nov and Dec to have more discount transactions), Orgprice
+  - Labels: Discount % (OrgPrice - AMT)/OrgPrice -> for regression, binary 1&0 for discount or not -> for classification problem
+  - Point to ask TA/ get advices:
+    -Some of the features have lots of dummy (such as brand), given that we have 120M transaction data, we are not sure whether having this much features (all the dummies) will be appropriate since we might not be able to use all 120M data point due to computation resources
+    - We are debating whether we should use all 120M data or sample some of them to train the data for the ease of computation (and to not crash).
+    - What's the most appropriate price to use for calculation. At the moment, we are using OrgPrice; however, we are debating that we can also use "retail" or "cost" columns.
+Next Steps:
+  - Perform correlation matrix or EDA to decide which problem to go for (regression vs classification)
+  - Fit the initial model
   
  
