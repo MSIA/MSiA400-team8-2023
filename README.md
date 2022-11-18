@@ -94,5 +94,24 @@ Updates:
 Next Steps:
   - Perform correlation matrix or EDA to decide which problem to go for (regression vs classification)
   - Fit the initial model
+
+### Nov 18th
+Updates:
   
+Feature Engineering
+  - perform cluster on brands
+  - feature -> log(avg retail price) and log(count occurrence in each store -> joining to skst table)
+  - Generate 6 clusters:
+    - 1 cluster: all brands that don't exist in skst table (262 samples)
+    - 1 cluster: all brands that appear in skst table only once (103 samples) -> identify them as new brand to the market (peak in the histogram)
+    - 4 clusters: divided the rest equally separated by Q1, median, and Q3 of log(avg retail price)
+  
+Modelling
+  - Focus on classification problem first (which product offer discount)
+  - Create skeleton code for logistic regression, random forest, and XGBoost
+  - Sampling data from 120M rows without brand first
+  
+Next Steps:
+  - Fit the model with and without brand features and investigate AUC
+  - Efficiently sample data to fit the model
  
