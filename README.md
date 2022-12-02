@@ -114,3 +114,10 @@ Next Steps:
   - Fit the model with and without brand features and investigate AUC
   - Efficiently sample data to fit the model
  
+Dec 2nd
+Updates
+  - Fit models: logistic regression, random forest, and SVM
+  - Started writing the report: introduction, EDA, feature engineering
+Next Steps:
+  - ROI analysis
+  - update report: executive summary, modeling, ROI analysis, and conclusion (any additional part? any suggestion from the TA?)
