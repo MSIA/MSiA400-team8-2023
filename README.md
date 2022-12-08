@@ -1,7 +1,12 @@
 # MSiA400-team8-2023
 
 ## Description
-<to be filled later when project is clearly defined>
+
+Dillard’s is a major retail chain with several stores. Dillard’s has point-of-sales (POS) data over a period of time in 2004 and 2005 that includes their store information, stock-keeping-unit (SKU), and transactions. Over the recorded times, around half of all transactions happen with some discounts. The MSiA team believes that it would be beneficial to understand which components (product’s features, location, time of the year, etc.) contribute to the need to offer discounts within transactions. 
+
+Understanding the mechanics of transactions with discounts will allow Dillard’s to increase the production rate for products that can be sold without a discount. Moreover, Dillard’s can also accurately predict future revenue by predicting the discount (reduction of sales price).
+
+With these motivations, the MSiA team created classification machine learning model (logistic regression) with AUC 0.85 and the decision point at true positive rate at 0.77 and false positive rate at 0.2 (and Random Forest model with AUC 0.81). The model is trained on two years worth of Dillard’s point-of-sales data to predict which transaction requires discount to happen. With our business assumptions (table 3), we expect to gain around $4,156,311.60 from apply this machine learning model with the cost of investment at $3,006,580. As a result, we expect the ROI for building and applying this model to be 38%.
 
 ## Weekly Updates
 ### Oct 14th
