@@ -8,6 +8,13 @@ Understanding the mechanics of transactions with discounts will allow Dillard’
 
 With these motivations, the MSiA team created classification machine learning model (logistic regression) with AUC 0.85 and the decision point at true positive rate at 0.77 and false positive rate at 0.2 (and Random Forest model with AUC 0.81). The model is trained on two years worth of Dillard’s point-of-sales data to predict which transaction requires discount to happen. With our business assumptions (table 3), we expect to gain around $4,156,311.60 from apply this machine learning model with the cost of investment at $3,006,580. As a result, we expect the ROI for building and applying this model to be 38%.
 
+### Files
+- Personal Jupyter Notebooks: Exploring data by each team members (store and brand -> feature engineering for store and brand)
+- EDA Notebook: Final EDA notebook to create visualization and analysis for presentation and report
+- Model Notebook: (400 Models.ipynb) Notebook of models created for this project
+- ROI Analysis: Excel file for ROI calculation and all business assumptions
+- Presentation: Powerpoint file 
+
 ## Weekly Updates
 ### Oct 14th
 Updates:
